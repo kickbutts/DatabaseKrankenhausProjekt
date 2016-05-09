@@ -28,8 +28,8 @@ docker run -d -p 3306:3306 mysqldb
 ```
 
 So startet man einen Contianer, der den laufenden MySQL Server enthält.
-- Der Container stellt die [Datenbank für das Krankhausprojekt](https://github.com/kickbutts/DatabaseKrankenhausProjekt/blob/master/DatenbankKrankenhaus.sql)bereit.
-- Der MySQL Server hat einen Benutzer mit dem Login *schuler* und dem Passwort *geheim*
+- Der Container stellt die [Datenbank für das Krankhausprojekt](https://github.com/kickbutts/DatabaseKrankenhausProjekt/blob/master/DatenbankKrankenhaus.sql) bereit.
+- Der MySQL Server hat einen Benutzer mit dem Login *schueler* und dem Passwort *geheim*
 - Die Datenbank ist auf port 3306 (standart MySQL Port) erreichbar.
 - Der Benutzer *schueler* hat lesenden und schreibenden Zugriff auf die Datenbank.
 
