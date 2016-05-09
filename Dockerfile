@@ -20,7 +20,7 @@ ADD ./DatenbankKrankenhaus.sql /var/db/DatenbankKrankenhaus.sql
 ENV user schueler
 ENV password geheim
 ENV url file:/var/db/DatenbankKrankenhaus.sql
-ENV right READ
+ENV right WRITE
 
 # Install starting script
 ADD ./start-database.sh /usr/local/bin/start-database.sh
