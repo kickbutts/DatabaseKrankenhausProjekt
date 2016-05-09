@@ -14,18 +14,12 @@ RUN apt-get -y install mysql-client mysql-server curl
 RUN sed -i -e"s/^bind-address\s*=\s*127.0.0.1/bind-address = 0.0.0.0/" /etc/mysql/my.cnf
 
 # Install database
-<<<<<<< HEAD
-ADD ./DatenbankKrankenhaus.sql /var/db/database.sql
-=======
-ADD ./fehlstunden.sql /var/db/fehlstunden.sql
-# Alternative Database
-ADD ./praesidenten.sql /var/db/praesidenten.sql
->>>>>>> origin/master
+ADD ./DatenbankKrankenhaus.sql /var/db/DatenbankKrankenhaus.sql
 
 # Set Standard settings
 ENV user schueler
 ENV password geheim
-ENV url file:/var/db/fehlstunden.sql
+ENV url file:/var/db/DatenbankKrankenhaus.sql
 ENV right READ
 
 # Install starting script
