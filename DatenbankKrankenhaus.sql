@@ -40,7 +40,7 @@ CREATE TABLE patienten
 --
 -- Daten für Tabelle `patienten`
 --
-INSERT INTO patienten (name, vorname, krankenkasse, behandelnerArzt) VALUES
+INSERT INTO patienten (name, vorname, krankenkasse, behandelnderArzt) VALUES
   ('Müller', 'Peter', 'AOK', '1'),
   ('Schmidt', 'Olaf', 'DFG', '2'),
   ('Peters', 'Otto', 'QWE', '3');
