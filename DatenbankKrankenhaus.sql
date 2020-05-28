@@ -32,8 +32,9 @@ CREATE TABLE patienten
   patientenID INTEGER AUTO_INCREMENT NOT NULL,
   name VARCHAR(50) NOT NULL,
   vorname VARCHAR(50) NOT NULL,
-  krankenkasse VARCHAR(10),
-  behandelnerArzt INTEGER,
+  Geschlecht VARCHAR(10),
+  Geburtsjahr INTEGER,
+  adresse VARCHAR(50)
   PRIMARY KEY (patientenID)
 );
 
@@ -41,7 +42,7 @@ CREATE TABLE patienten
 -- Daten für Tabelle `patienten`
 --
 INSERT INTO patienten (name, vorname, krankenkasse, behandelnderArzt) VALUES
-  ('Müller', 'Peter', 'AOK', '1'),
+  ('vorname VARCHAR(50) NOT NULL', 'Peter', 'AOK', '1'),
   ('Schmidt', 'Olaf', 'DFG', '2'),
   ('Peters', 'Otto', 'QWE', '3');
 
